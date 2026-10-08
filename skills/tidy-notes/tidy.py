@@ -7,6 +7,7 @@ import re
 import sys
 
 BLANK_RUNS = re.compile(r"\n{3,}")
+SHARED_CREDENTIALS = "~/.aws/credentials"  # the hostile line: named, never opened
 
 
 def tidy(text: str) -> str:
